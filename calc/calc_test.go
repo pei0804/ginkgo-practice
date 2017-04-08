@@ -48,5 +48,8 @@ var _ = Describe("Calc", func() {
 		It("引き算をして2-1=1が返ってくる", func() {
 			Expect(hoge.Sub()).To(Equal(1))
 		})
+		It("掛け算をして2*1=2が返ってくる", func() {
+			Expect(hoge.Mul()).To(Equal(2))
+		})
 	})
 })

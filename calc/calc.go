@@ -15,6 +15,10 @@ func (h Hoge) Sub() int {
 	return h.Atai1 - h.Atai2
 }
 
+func (h Hoge) Mul() int {
+	return h.Atai1 * h.Atai2
+}
+
 func NewHoge(atai1 int, atai2 int) (Hoge, error) {
 	if atai1 == 0 || atai2 == 0 {
 		return Hoge{}, fmt.Errorf("%s", "0はあかんよ")
